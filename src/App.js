@@ -1,15 +1,7 @@
 import React from 'react'
-import {
-  ChakraProvider,
-  Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
-  theme,
-} from '@chakra-ui/react'
-import { Logo } from './Logo'
+import { ChakraProvider, Box, VStack, Grid, theme } from '@chakra-ui/react'
+import { routes } from './routes'
+import { Routes, Route } from 'react-router-dom'
 
 import { LoginModal, Header } from './components'
 
@@ -18,22 +10,14 @@ function App() {
     <ChakraProvider theme={theme}>
       <Box textAlign="center" fontSize="xl">
         <Header />
-        <Grid minH="100vh" p={3}>
+        <Grid p={3}>
           <VStack spacing={8}>
-            <Logo h="40vmin" pointerEvents="none" />
-            <Text>
-              Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
-            </Text>
-            <Link
-              color="teal.500"
-              href="https://chakra-ui.com"
-              fontSize="2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn Chakra
-            </Link>
             <LoginModal />
+            <Routes>
+              {routes.map(({ path, Component }) => (
+                <Route key={path} path={path} element={<Component />} />
+              ))}
+            </Routes>
           </VStack>
         </Grid>
       </Box>
