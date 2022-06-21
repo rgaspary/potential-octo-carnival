@@ -1,3 +1,4 @@
 {
-  "jest.jestCommandLine": "jest test -- --watch"
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.formatOnSave": true,
 }
