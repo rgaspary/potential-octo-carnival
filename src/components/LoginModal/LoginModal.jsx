@@ -19,13 +19,14 @@ export const LoginModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   useEffect(() => {
-    if (userUUID === null) onOpen()
+    // if (userUUID === null) onOpen()
   }, [])
 
   return (
     <Modal isOpen={isOpen} onClose={onClose} size="full">
       <ModalOverlay />
       <ModalContent>
+        <ModalCloseButton />
         <ModalBody>
           <Flex alignItems="center" flexDir="column">
             <Heading>Welcome to PegaWORLD 2022</Heading>

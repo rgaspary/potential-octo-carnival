@@ -18,7 +18,13 @@ module.exports = {
     'linebreak-style': ['error', 'unix'],
     quotes: ['error', 'single'],
     semi: ['error', 'never'],
-    'prettier/prettier': ['warn'],
+    'prettier/prettier': [
+      'error',
+      {
+        objectsInArrays: false,
+      },
+    ],
     'no-unused-vars': ['warn'],
+    'arrow-parens': ['warn', 'always'],
   },
 }
