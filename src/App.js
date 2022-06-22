@@ -1,13 +1,22 @@
 import React from 'react'
-import { ChakraProvider, Box, VStack, Grid, theme } from '@chakra-ui/react'
+import {
+  ChakraProvider,
+  Box,
+  VStack,
+  Grid,
+  extendTheme,
+} from '@chakra-ui/react'
 import { routes } from './routes'
 import { Routes, Route } from 'react-router-dom'
 
 import { LoginModal, Header } from './components'
+import '@fontsource/open-sans'
+
+import { customTheme } from './theme'
 
 function App() {
   return (
-    <ChakraProvider theme={theme}>
+    <ChakraProvider theme={customTheme}>
       <Box textAlign="center" fontSize="xl">
         <Header />
         <Grid p={3}>

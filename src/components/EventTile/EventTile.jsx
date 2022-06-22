@@ -7,16 +7,16 @@ export const EventTile = (data) => {
   const [favorites, setFavorites] = useState(
     JSON.parse(localStorage.getItem('favorites')) || []
   )
-  console.log(favorites)
+  // console.log(favorites)
   const saveFavorite = () => {
     const found = favorites.find((fav) => fav === eventId)
-    console.log(found)
+    // console.log(found)
     if (found === undefined) {
       const newFavorites = JSON.stringify([...favorites, eventId])
       localStorage.setItem('favorites', newFavorites)
       setFavorites(newFavorites)
     }
-    console.log(favorites)
+    // console.log(favorites)
   }
   return (
     <Flex
