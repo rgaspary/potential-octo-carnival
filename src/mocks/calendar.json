@@ -1,0 +1,152 @@
+[
+  {
+    "title": "Day 1",
+    "events": [
+      {
+        "title": "Introduction",
+        "description": "A great start to the event. A meet & greet with your hosts from Pega. Come join us in kicking off PegaWORLD 2022.",
+        "hours": {
+          "start": "8:00am",
+          "end": "8:30am"
+        },
+        "eventId": "2cfbadea-d05c-42e4-b003-376c7ec99597"
+      },
+      {
+        "title": "Event 1",
+        "description": "Laboris veniam incididunt commodo proident qui laboris est qui amet.",
+        "hours": {
+          "start": "9:00am",
+          "end": "10:00am"
+        },
+        "eventId": "287e50b3-7009-480a-8624-b81c8dacbcbd"
+      },
+      {
+        "title": "Event 2",
+        "description": "Laboris veniam incididunt commodo proident qui laboris est qui amet.",
+        "hours": {
+          "start": "11:00am",
+          "end": "12:00am"
+        },
+        "eventId": "1abe4ea7-8b98-455e-b723-031e03284b5f"
+      },
+      {
+        "title": "Event 3",
+        "description": "Laboris veniam incididunt commodo proident qui laboris est qui amet.",
+        "hours": {
+          "start": "2:00pm",
+          "end": "4:00pm"
+        },
+        "eventId": "914800d2-af0e-4a1a-b5cf-5b9ee7b538d7"
+      },
+      {
+        "title": "End of day 1",
+        "description": "Laboris veniam incididunt commodo proident qui laboris est qui amet.",
+        "hours": {
+          "start": "4:30pm",
+          "end": "5:00pm"
+        },
+        "eventId": "ccda8667-a7cb-4f0f-b0cd-794caa5029cc"
+      }
+    ]
+  },
+  {
+    "title": "Day 2",
+    "events": [
+      {
+        "title": "Start of day 2",
+        "description": "Ex ut nostrud nulla eiusmod tempor deserunt officia aliqua id dolore nostrud.",
+        "hours": {
+          "start": "8:00am",
+          "end": "8:30am"
+        },
+        "eventId": "d0e877db-854f-461a-9600-c5a6f6737f1b"
+      },
+      {
+        "title": "Event 1",
+        "description": "Laboris veniam incididunt commodo proident qui laboris est qui amet.",
+        "hours": {
+          "start": "9:00am",
+          "end": "10:00am"
+        },
+        "eventId": "8c7205ee-84dc-43f4-b836-1928b87b9337"
+      },
+      {
+        "title": "Event 2",
+        "description": "Laboris veniam incididunt commodo proident qui laboris est qui amet.",
+        "hours": {
+          "start": "11:00am",
+          "end": "12:00am"
+        },
+        "eventId": "dd30dd62-add3-4a59-957f-8a3467e119b6"
+      },
+      {
+        "title": "Event 3",
+        "description": "Laboris veniam incididunt commodo proident qui laboris est qui amet.",
+        "hours": {
+          "start": "2:00pm",
+          "end": "4:00pm"
+        },
+        "eventId": "0ab9246f-144b-484e-a31f-9098dd2d7143"
+      },
+      {
+        "title": "End of day 2",
+        "description": "Laboris veniam incididunt commodo proident qui laboris est qui amet.",
+        "hours": {
+          "start": "4:30pm",
+          "end": "5:00pm"
+        },
+        "eventId": "9ae15274-a807-469b-93c6-41f3c797a9ac"
+      }
+    ]
+  },
+  {
+    "title": "Day 3",
+    "events": [
+      {
+        "title": "Start of day 3",
+        "description": "Ex ut nostrud nulla eiusmod tempor deserunt officia aliqua id dolore nostrud.",
+        "hours": {
+          "start": "8:00am",
+          "end": "8:30am"
+        },
+        "eventId": "413dcec1-2df2-4b95-9eed-503e83c8ef44"
+      },
+      {
+        "title": "Event 1",
+        "description": "Laboris veniam incididunt commodo proident qui laboris est qui amet.",
+        "hours": {
+          "start": "9:00am",
+          "end": "10:00am"
+        },
+        "eventId": "98b97ccb-751d-489b-90e9-7aefe76e9a38"
+      },
+      {
+        "title": "Event 2",
+        "description": "Laboris veniam incididunt commodo proident qui laboris est qui amet.",
+        "hours": {
+          "start": "11:00am",
+          "end": "12:00am"
+        },
+        "eventId": "6358e384-068d-4d94-932a-7565ffdd1a50"
+      },
+      {
+        "title": "Event 3",
+        "description": "Laboris veniam incididunt commodo proident qui laboris est qui amet.",
+        "hours": {
+          "start": "2:00pm",
+          "end": "4:00pm"
+        },
+        "eventId": "b8ced9e0-241c-4f1f-a05a-21c16da0f364"
+      },
+      {
+        "title": "End of day 3",
+        "description": "Laboris veniam incididunt commodo proident qui laboris est qui amet.",
+        "hours": {
+          "start": "4:30pm",
+          "end": "5:00pm"
+        },
+        "eventId": "e86ee1d8-36d5-41f0-8751-9b7f83bd451b"
+      }
+    ]
+  }
+]

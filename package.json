@@ -7,6 +7,10 @@
     "@chakra-ui/react": "^2.2.1",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
+    "@pega/cosmos-react-core": "^3.0.0-dev.20.0",
+    "@pega/cosmos-react-rte": "^3.0.0-dev.20.0",
+    "@pega/cosmos-react-social": "^3.0.0-dev.20.0",
+    "@pega/cosmos-react-work": "^3.0.0-dev.20.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^14.2.1",
@@ -16,6 +20,7 @@
     "react-icons": "^3.11.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "uuidv4": "^6.2.13",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

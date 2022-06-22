@@ -8,7 +8,7 @@ export const UserMenu = () => {
       <MenuButton as={Button} variant="ghost">
         <HamburgerIcon />
       </MenuButton>
-      <MenuList>
+      <MenuList color="black">
         <MenuItem>Log in</MenuItem>
         <MenuItem>Events calendar</MenuItem>
         <MenuItem>About this conference</MenuItem>
