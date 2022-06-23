@@ -28,7 +28,8 @@ export const EventTile = (data) => {
       borderTopWidth={isFirst ? '0' : '0.0625rem'}
       justifyContent="space-evenly"
       alignItems="center"
-      h="32"
+      minH="32"
+      flexWrap={{ base: 'wrap', md: 'nowrap' }}
     >
       <Button onClick={saveFavorite} variant="ghost">
         {favorites.find((fav) => fav === eventId) ? (
@@ -41,7 +42,7 @@ export const EventTile = (data) => {
         <Text fontWeight="bold">{title}</Text>
         <Text fontSize="md">{description}</Text>
       </Box>
-      <Text fontSize="md">
+      <Text fontSize="md" mt={{ base: '16px', md: 0 }}>
         {hours.start} - {hours.end}
       </Text>
     </Flex>

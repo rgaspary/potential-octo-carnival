@@ -1,15 +1,9 @@
 import React from 'react'
-import {
-  ChakraProvider,
-  Box,
-  VStack,
-  Grid,
-  extendTheme,
-} from '@chakra-ui/react'
+import { ChakraProvider, Box, VStack, Grid } from '@chakra-ui/react'
 import { routes } from './routes'
 import { Routes, Route } from 'react-router-dom'
 
-import { LoginModal, Header } from './components'
+import { LoginModal, Header, Footer } from './components'
 import '@fontsource/open-sans'
 
 import { customTheme } from './theme'
@@ -29,6 +23,7 @@ function App() {
             </Routes>
           </VStack>
         </Grid>
+        <Footer />
       </Box>
     </ChakraProvider>
   )
