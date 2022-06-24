@@ -9,7 +9,7 @@ export const EventTile = (data) => {
   )
   const saveFavorite = () => {
     const found = favorites.find((fav) => fav === eventId)
-    const oldFavorites = JSON.parse(localStorage.getItem('favorites'))
+    const oldFavorites = JSON.parse(localStorage.getItem('favorites')) || []
     if (found) {
       // Remove from favorites
       const newFavorites = oldFavorites.filter((fav) => fav !== eventId)
@@ -39,6 +39,7 @@ export const EventTile = (data) => {
         onClick={saveFavorite}
         variant="ghost"
         w={{ base: '20%', md: '10%' }}
+        aria-label={`bookmark ${title} event`}
       >
         {favorites.find((fav) => fav === eventId) ? (
           <BsFillBookmarkFill />

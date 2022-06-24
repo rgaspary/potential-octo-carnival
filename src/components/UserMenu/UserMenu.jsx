@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 export const UserMenu = () => {
   return (
     <Menu>
-      <MenuButton as={Button} variant="ghost">
+      <MenuButton as={Button} variant="ghost" aria-label="navigation-menu">
         <HamburgerIcon />
       </MenuButton>
       <MenuList color="black">
