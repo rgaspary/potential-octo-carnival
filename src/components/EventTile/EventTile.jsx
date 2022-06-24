@@ -7,16 +7,20 @@ export const EventTile = (data) => {
   const [favorites, setFavorites] = useState(
     JSON.parse(localStorage.getItem('favorites')) || []
   )
-  // console.log(favorites)
   const saveFavorite = () => {
     const found = favorites.find((fav) => fav === eventId)
-    // console.log(found)
-    if (found === undefined) {
-      const newFavorites = JSON.stringify([...favorites, eventId])
-      localStorage.setItem('favorites', newFavorites)
+    const oldFavorites = JSON.parse(localStorage.getItem('favorites'))
+    if (found) {
+      // Remove from favorites
+      const newFavorites = oldFavorites.filter((fav) => fav !== eventId)
+      localStorage.setItem('favorites', JSON.stringify(newFavorites))
+      setFavorites(newFavorites)
+    } else {
+      // Add to favorites
+      const newFavorites = [...oldFavorites, eventId]
+      localStorage.setItem('favorites', JSON.stringify(newFavorites))
       setFavorites(newFavorites)
     }
-    // console.log(favorites)
   }
   return (
     <Flex
@@ -29,22 +33,40 @@ export const EventTile = (data) => {
       justifyContent="space-evenly"
       alignItems="center"
       minH="32"
-      flexWrap={{ base: 'wrap', md: 'nowrap' }}
+      w="100%"
     >
-      <Button onClick={saveFavorite} variant="ghost">
+      <Button
+        onClick={saveFavorite}
+        variant="ghost"
+        w={{ base: '20%', md: '10%' }}
+      >
         {favorites.find((fav) => fav === eventId) ? (
           <BsFillBookmarkFill />
         ) : (
           <BsBookmark />
         )}
       </Button>
-      <Box w="70%" px="3">
-        <Text fontWeight="bold">{title}</Text>
-        <Text fontSize="md">{description}</Text>
-      </Box>
-      <Text fontSize="md" mt={{ base: '16px', md: 0 }}>
-        {hours.start} - {hours.end}
-      </Text>
+      <Flex
+        alignItems="center"
+        flexDir={{ base: 'column', md: 'row' }}
+        w={{ base: '80%', md: '90%' }}
+        textAlign="left"
+        ml="15px"
+      >
+        <Box w={{ base: '100%', md: '70%' }}>
+          <Text fontWeight="bold">{title}</Text>
+          <Text fontSize="md">{description}</Text>
+        </Box>
+        <Text
+          w={{ base: '100%', md: '30%' }}
+          fontSize="md"
+          ml={{ base: 0, md: 'auto' }}
+          mt={{ base: '16px', md: 0 }}
+          textAlign={{ base: 'center', md: 'right' }}
+        >
+          {hours.start} - {hours.end}
+        </Text>
+      </Flex>
     </Flex>
   )
 }
