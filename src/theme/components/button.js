@@ -23,4 +23,7 @@ export const ButtonStyles = {
       },
     },
   },
+  defaultProps: {
+    variant: 'primary',
+  },
 }

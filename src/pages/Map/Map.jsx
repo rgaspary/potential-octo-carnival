@@ -13,7 +13,7 @@ export const Map = () => {
       <MapComponent imagePath={conferenceMap} imageAlt="Conference Map" />
       <Link
         fontWeight={600}
-        href="https://localhost:3000/map"
+        href={conferenceMap}
         target="_blank"
         color="blueMedium"
       >

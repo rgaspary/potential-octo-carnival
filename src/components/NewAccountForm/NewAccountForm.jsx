@@ -28,6 +28,7 @@ export const NewAccountForm = () => {
           <FormLabel htmlFor="email">Email Address</FormLabel>
           <Input id="email" type="email" />
         </FormControl>
+        {/* Add checkbox to sign up for email updates */}
       </SimpleGrid>
       <Button>Create an account</Button>
     </Flex>

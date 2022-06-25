@@ -11,15 +11,18 @@ export const UserMenu = () => {
         <HamburgerIcon />
       </MenuButton>
       <MenuList color="black">
-        <MenuItem>Log in</MenuItem>
-        <MenuItem>
-          <Link to={urls.Calendar()}>Events calendar</Link>
-        </MenuItem>
-        <MenuItem>About this conference</MenuItem>
-        <MenuItem>
-          <Link to={urls.Map()}>Event Map</Link>
-        </MenuItem>
-        <MenuItem>Contact us</MenuItem>
+        <Link to={urls.LogInPage()}>
+          <MenuItem>Log in</MenuItem>
+        </Link>
+        <Link to={urls.Calendar()}>
+          <MenuItem>Events calendar</MenuItem>
+        </Link>
+        <Link to={urls.Map()}>
+          <MenuItem>Event map</MenuItem>
+        </Link>
+        <Link to={urls.MoreInformation()}>
+          <MenuItem>More information</MenuItem>
+        </Link>
       </MenuList>
     </Menu>
   )
