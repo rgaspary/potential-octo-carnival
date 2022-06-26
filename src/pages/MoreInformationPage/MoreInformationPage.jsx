@@ -1,9 +1,10 @@
+import { Box, Text } from '@chakra-ui/react'
 import React from 'react'
 
 export const MoreInformationPage = () => {
   return (
-    <div>
-      <h1>More Information</h1>
-    </div>
+    <Box>
+      <Text>More Information</Text>
+    </Box>
   )
 }

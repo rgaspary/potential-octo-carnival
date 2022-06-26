@@ -1,5 +1,5 @@
 import React from 'react'
-import { ChakraProvider, Box, VStack, Grid } from '@chakra-ui/react'
+import { ChakraProvider, Flex, VStack, Grid } from '@chakra-ui/react'
 import { routes } from './routes'
 import { Routes, Route } from 'react-router-dom'
 
@@ -11,9 +11,9 @@ import { customTheme } from './theme'
 function App() {
   return (
     <ChakraProvider theme={customTheme}>
-      <Box textAlign="center" fontSize="xl" h="100vh">
+      <Flex textAlign="center" fontSize="xl" h="100vh" flexDir="column">
         <Header />
-        <Grid p={3}>
+        <Grid p={3} h="100%">
           <VStack spacing={8}>
             <LoginModal />
             <Routes>
@@ -24,7 +24,7 @@ function App() {
           </VStack>
         </Grid>
         <Footer />
-      </Box>
+      </Flex>
     </ChakraProvider>
   )
 }

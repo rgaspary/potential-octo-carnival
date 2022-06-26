@@ -4,6 +4,7 @@ export const ButtonStyles = {
     fontWeight: '400',
     px: '4',
     lineHeight: '14px',
+    fontSize: 'sm',
   },
   variants: {
     primary: (props) => ({

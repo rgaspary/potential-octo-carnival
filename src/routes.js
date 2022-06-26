@@ -1,4 +1,11 @@
-import { Home, Calendar, Map, LogInPage, MoreInformationPage } from './pages'
+import {
+  Home,
+  Calendar,
+  Map,
+  LogInPage,
+  MoreInformationPage,
+  SignUpPage,
+} from './pages'
 
 export const urls = {
   Home: () => '/',
@@ -6,6 +13,7 @@ export const urls = {
   Map: () => '/map',
   LogInPage: () => '/login',
   MoreInformation: () => '/more-information',
+  SignUpPage: () => '/signup',
 }
 
 export const routes = [
@@ -33,5 +41,10 @@ export const routes = [
     name: 'MoreInformation',
     path: urls.MoreInformation(),
     Component: MoreInformationPage,
+  },
+  {
+    name: 'SignUpPage',
+    path: urls.SignUpPage(),
+    Component: SignUpPage,
   },
 ]

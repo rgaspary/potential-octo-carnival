@@ -4,6 +4,9 @@ export const InputStyles = {
       borderRadius: 'calc(0.25rem)',
       borderWidth: '1px',
       padding: '0 0.5rem',
+      fontSize: '14px',
+      lineHeight: 'normal',
+      height: '32px',
     },
   },
   variants: {
