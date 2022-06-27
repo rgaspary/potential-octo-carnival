@@ -11,7 +11,7 @@ import { customTheme } from './theme'
 function App() {
   return (
     <ChakraProvider theme={customTheme}>
-      <Flex textAlign="center" fontSize="xl" h="100vh" flexDir="column">
+      <Flex textAlign="center" fontSize="xl" flexDir="column">
         <Header />
         <Grid p={3} h="100%">
           <VStack spacing={8}>

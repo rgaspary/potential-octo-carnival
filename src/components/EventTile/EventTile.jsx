@@ -42,7 +42,7 @@ export const EventTile = (data) => {
         w="50px"
         aria-label={`bookmark ${title} event`}
       >
-        <IconContext.Provider value={{ size: '2rem' }}>
+        <IconContext.Provider value={{ size: '50px' }}>
           {favorites.find((fav) => fav === eventId) ? (
             <BsFillBookmarkFill />
           ) : (
