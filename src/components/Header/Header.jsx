@@ -20,7 +20,7 @@ export const Header = () => {
           <Text fontWeight="bold" as="span">
             WORLD
           </Text>{' '}
-          2022
+          2023
         </Link>
       </Text>
       <ColorModeSwitcher ml="auto" />

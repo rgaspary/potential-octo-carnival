@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "PegaWORLD 2023",
+  "name": "PegaWORLD iNspire Conference 2023",
   "icons": [
     {
       "src": "favicon.ico",
@@ -35,6 +35,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#076bc9",
-  "background_color": "#e9eef3"
+  "theme_color": "#e9eef3",
+  "background_color": "#ffffff"
 }
