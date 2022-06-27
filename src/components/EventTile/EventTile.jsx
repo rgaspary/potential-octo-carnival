@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Flex, Button, Text, Box } from '@chakra-ui/react'
 import { BsFillBookmarkFill, BsBookmark } from 'react-icons/bs'
+import { IconContext } from 'react-icons'
 
 export const EventTile = (data) => {
   const { title, description, hours, eventId, isFirst } = data
@@ -38,14 +39,16 @@ export const EventTile = (data) => {
       <Button
         onClick={saveFavorite}
         variant="ghost"
-        w={{ base: '20%', md: '10%' }}
+        w="50px"
         aria-label={`bookmark ${title} event`}
       >
-        {favorites.find((fav) => fav === eventId) ? (
-          <BsFillBookmarkFill />
-        ) : (
-          <BsBookmark />
-        )}
+        <IconContext.Provider value={{ size: '2rem' }}>
+          {favorites.find((fav) => fav === eventId) ? (
+            <BsFillBookmarkFill />
+          ) : (
+            <BsBookmark />
+          )}
+        </IconContext.Provider>
       </Button>
       <Flex
         alignItems="center"

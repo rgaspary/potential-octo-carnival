@@ -14,13 +14,13 @@ export const DocumentList = (data) => {
   const getFileIcon = (fileType) => {
     switch (fileType) {
       case 'PDF':
-        return <AiOutlineFilePdf />
+        return <AiOutlineFilePdf aria-label="pdf file" />
       case 'DOC':
-        return <AiOutlineFileWord />
+        return <AiOutlineFileWord aria-label="word doc file" />
       case 'JPG':
-        return <AiOutlineFileJpg />
+        return <AiOutlineFileJpg aria-label="image file" />
       default:
-        return <AiOutlineFileText />
+        return <AiOutlineFileText aria-label="plain text file" />
     }
   }
   return (

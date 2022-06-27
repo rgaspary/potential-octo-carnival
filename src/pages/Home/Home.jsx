@@ -1,7 +1,7 @@
 import { SimpleGrid } from '@chakra-ui/react'
 import React from 'react'
 import { DayTabs, MapComponent } from '../../components'
-import conferenceMap from '../../images/conference-map.jpg'
+import conferenceMap from '../../images/conference-map.webp'
 import calendarData from '../../mocks/calendar.json'
 
 export const Home = () => {

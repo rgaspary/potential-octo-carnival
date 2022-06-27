@@ -30,7 +30,7 @@ export const MoreInformationPage = () => {
     },
   ]
   return (
-    <Box>
+    <Box data-testid="more-information-page">
       <PageTitle headingType="h1" heading="More Information" />
       <PageDescription copy={pageCopy} />
       <DocumentList documents={mockFiles} />

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Text, Link, Flex } from '@chakra-ui/react'
-import conferenceMap from '../../images/conference-map.jpg'
+import conferenceMap from '../../images/conference-map.webp'
 import { MapComponent } from '../../components'
 import { BsCloudDownload } from 'react-icons/bs'
 
